@@ -23,7 +23,7 @@ public class LoginApi {
     private RequestHelper requestHelper;
 
     public LoginApi(RequestHelper requestHelper, OkHttpClient okHttpClient){
-        this.requestHelper = null;
+
         this.requestHelper = requestHelper;
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(FastJsonConverterFactory.create())
